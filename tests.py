@@ -3,8 +3,8 @@ import unittest
 
 class flasktest(unittest.TestCase):
     def test_if_true(self):
-        value = 1
-        self.assertEqual(value, 1)
+        value = 2
+        self.assertEqual(value, 2)
 
 
 
