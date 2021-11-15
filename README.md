@@ -6,7 +6,10 @@ The full project board which includes the development process of this service ca
 # research
 The Spotify API is a RESTApi use to get data from the Spotify service. We're using this API because Spotify already has a large library of music and millions of users paying for it. With the API we can ask the user to authorize using their own spotify account. This way we have access to the user's information and playlists. 
 
-In order to get the authorization working, we need to verify the app with the spotify developer portal. The verified URL is 127.0.0.1:4000. Any other url will not support Spotify authorization and will therefore not work.
+In order to get the authorization working, we need to verify the app with the spotify developer portal. The verified URL is 127.0.0.1:5000. Any other url will not support Spotify authorization and will therefore not work.
+
+# How to run the flask app
+This is mainly aimed towards windows users since python runs a little differently. In order to run the flask app you need to have something called a virtualenv. In this github the virtualenv has been provided and is called SpotifyEnv. In order to run the virtualenv, all you have to do is CD to the root file of this project and type "SpotifyEnv\Scripts\activate". This will activate the virtualenv and you will then be able to run the "python -m flask run" command.
 
 # Notes
 
