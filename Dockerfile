@@ -11,4 +11,4 @@ RUN python -m pip install requests
 
 ENV FLASK_APP=main.py
 # define the command to start the container
-CMD ["python","-m","flask","run","--host","0.0.0.0"]
+CMD ["python","-m","flask","run", "--host", "0.0.0.0"]
