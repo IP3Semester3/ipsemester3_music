@@ -1,20 +1,11 @@
-FROM ubuntu:18.10
-
-MAINTAINER Your Name "me"
-
-RUN apt-get update
-RUN apt-get install -y python3 python3-dev python3-pip nginx
-RUN pip3 install uwsgi
-
-COPY ./ ./app
-WORKDIR ./app
-
-RUN pip3 install flask
-RUN pip3 install requests
-
-
-COPY . /app
-
-ENTRYPOINT [ "python" ]
-
-CMD [ "main.py" ]
+# init a base image (Alpine is small Linux distro)
+FROM python:3.6.1-alpine
+# define the present working directory
+WORKDIR /docker-flask-test
+# copy the contents into the working dir
+ADD . /docker-flask-test
+# run pip to install the dependencies of the flask app
+RUN pip install flask
+RUN pip install requests
+# define the command to start the container
+CMD ["python","app.py"]
