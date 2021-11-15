@@ -9,4 +9,4 @@ RUN python -m pip install --upgrade pip
 RUN python -m pip install flask
 RUN python -m pip install requests
 # define the command to start the container
-CMD ["python","app.py"]
+CMD ["python","main.py"]
