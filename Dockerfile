@@ -1,13 +1,16 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.10
 
 MAINTAINER Your Name "me"
 
-RUN apt-get update -y && \
-    apt-get install -y python-pip python-dev
-WORKDIR /app
+RUN apt-get update
+RUN apt-get install -y python3 python3-dev python3-pip nginx
+RUN pip3 install uwsgi
 
-RUN python3 -m pip install flask
-RUN python3 -m pip install requests
+COPY ./ ./app
+WORKDIR ./app
+
+RUN pip3 install flask
+RUN pip3 install requests
 
 
 COPY . /app
