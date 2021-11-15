@@ -5,7 +5,7 @@ WORKDIR /docker-flask-test
 # copy the contents into the working dir
 ADD . /docker-flask-test
 # run pip to install the dependencies of the flask app
-RUN python pip install flask
-RUN python pip install requests
+RUN python -m install flask
+RUN python -m install requests
 # define the command to start the container
-CMD ["python","app.py"]
+CMD ["python -m","app.py"]
