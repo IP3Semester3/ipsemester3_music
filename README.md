@@ -12,9 +12,13 @@ In order to get the authorization working, we need to verify the app with the sp
 This is mainly aimed towards windows users since python runs a little differently. In order to run the flask app you need to have something called a virtualenv. In this github the virtualenv has been provided and is called SpotifyEnv. In order to run the virtualenv, all you have to do is CD to the root file of this project and type "SpotifyEnv\Scripts\activate". This will activate the virtualenv and you will then be able to run the "python -m flask run" command.
 
 # Notes
-
+## Development
 During development we use the url 127.0.0.1:4000. Changing this breaks the Spotify authorization so make sure there are no other applications running on the exact same url. 
 There is a limit of 25 users that can authorize using this service and I have to manually add these users to the list of testers while the program is still under development. This is a limit set by Spotify themselves and I can’t change this. So in order to actually use this service while testing, your email associated with the spotify account you want to use has to be registered for the app. 
+
+## Microservice
+This service is part of a larger application using the MVC principle. Using the data collected from the API in this service we can allow users to create lobbies for them to share their playlists with and host listening parties with their friends. The structure is as follows:
+![c2](https://user-images.githubusercontent.com/73947701/143425039-e94d6091-06ed-437c-90ee-2083af29d6e1.png)
 
 # Github setup
 ## Branches
