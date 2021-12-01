@@ -39,6 +39,11 @@ In this github we work with different branches that correlate to the status of t
 For new features it is advised to create a new branch from the main branch. The name of this branch has to correspond with the Issue ID found on our JIRA page (SEM3-25, link for the JIRA project is at the top of this document) followed by the feature name. This way we can keep a clean and organized branch setup going.
 Pull requests into the main branch will be tested so make sure you have created sufficient unit tests before creating a pull request. 
 
+## Pull requests
+The main branch has been locked to avoid accidentally breaking the application with a wrong push and also acts as a backup for if things somewhere else go wrong. It will always host the most up to date stable release.
+
+In order to update and push commits to the main branch, a pull requests has to be made. These will have to be reviewed within 24 hours
+
 # Coding Conventions
 In this project we follow the standard coding conventions for Python (https://www.python.org/dev/peps/pep-0008) . We also use the standard Python coding conventions in regards to docstring which helps understanding methods easier without having to decipher the whole thing. 
 ````
