@@ -16,7 +16,7 @@ The Spotify API is a RESTApi use to get data from the Spotify service. We're usi
 Currently this project is still under development and many features are subject to change or incomplete. 
 
 # Project Board
-The full project board which includes the development process of this service can be found here: https://semseter3-ip-tomeykholt.atlassian.net/jira/software/projects/SEM3/boards/2. If you're working on this project, you will need to ask for an invite from me (https://github.com/StijnSchellekens) or https://github.com/TEykholt
+The full project board which includes the development process of this service can be found on [Jira](https://semseter3-ip-tomeykholt.atlassian.net/jira/software/projects/SEM3/boards/2). If you're working on this project, you will need to ask for an invite from [me](https://github.com/StijnSchellekens) or [Tom Eykholt](https://github.com/TEykholt)
 
 In order to get the authorization working, we need to verify the app with the spotify developer portal. The verified URL is 127.0.0.1:5000. Any other url will not support Spotify authorization and will therefore not work.
 
@@ -24,7 +24,7 @@ In order to get the authorization working, we need to verify the app with the sp
 This is mainly aimed towards windows users since python runs a little differently. In order to run the flask app you need to have something called a virtualenv. In this github the virtualenv has been provided and is called SpotifyEnv. In order to run the virtualenv, all you have to do is CD to the root file of this project and type "SpotifyEnv\Scripts\activate". This will activate the virtualenv and you will then be able to run the "python -m flask run" command.
 
 # Coding Conventions
-In this project we follow the standard coding conventions for Python (https://www.python.org/dev/peps/pep-0008) . We also use the standard Python coding conventions in regards to docstring which helps understanding methods easier without having to decipher the whole thing. 
+In this project we follow the standard coding conventions for [Python](https://www.python.org/dev/peps/pep-0008) . We also use the standard Python coding conventions in regards to docstring which helps understanding methods easier without having to decipher the whole thing. 
 ````
 def example(string: stringname) -> int
 """This is an example description of a method.
