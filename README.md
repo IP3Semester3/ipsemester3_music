@@ -35,7 +35,7 @@ Returns:
 ````
 
 # Docker
-This project is also being pushed to Dockerhub, https://hub.docker.com/repository/docker/stijnschellekens/spotifylibrary. To pull the Docker project you need to first download Docker Desktop (Direct download: https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=header). To pull the docker image, open commandprompt and type: ``docker pull stijnschellekens/spotifylibrary``. To run the docker image, start Docker desktop, search for the image and run it. It will run on your localhost with post 5000.
+This project is also being pushed to Dockerhub, https://hub.docker.com/repository/docker/stijnschellekens/spotifylibrary. To pull the Docker project you need to first download [Docker Desktop](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=header). To pull the docker image, open commandprompt and type: ``docker pull stijnschellekens/spotifylibrary``. To run the docker image, start Docker desktop, search for the image and run it. It will run on your localhost with post 5000.
 
 # Notes
 #### Development
