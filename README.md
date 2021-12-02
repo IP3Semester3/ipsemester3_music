@@ -1,22 +1,41 @@
 ![minions](https://afamilycdn.com/thumb_w/600/2017/dm-min-bananaday-1500167484389-11-10-266-418-crop-1500168295674.gif)
 # Getting Started
-This is the repository for ipsemester3_music. If you are new here be sure to read this readme as it contains helpful information. If you have worked on this project before feel free to continue working on it. Any updates to the readme will be visible in the commit history.
+This is the repository for ipsemester3_music. If you are new here be sure to read this readme as it contains helpful information. If you have worked on this project before feel free to continue working on it. Any updates to the readme will be visible in the commit history. If you've worked on other projects within this organisation, you will only need to read the following parts:
+
+- [How to run flask app](#how-to-run-the-flask-app)
+- [Coding conventions](#coding-conventions)
+- [Docker](#docker)
+- [Notes](#notes)
 
 # Overview
 Using the Spotify API we can get access to an almost infinite library of music and playlists. This service is designed to make the api easier to use and implement in other applications regardless of coding language used.
 
+#### readme
+The Spotify API is a RESTApi use to get data from the Spotify service. We're using this API because Spotify already has a large library of music and millions of users paying for it. With the API we can ask the user to authorize using their own spotify account. This way we have access to the user's information and playlists. 
+
 Currently this project is still under development and many features are subject to change or incomplete. 
 
 # Project Board
-The full project board which includes the development process of this service can be found here: https://semseter3-ip-tomeykholt.atlassian.net/jira/software/projects/SEM3/boards/2
-
-# Research
-The Spotify API is a RESTApi use to get data from the Spotify service. We're using this API because Spotify already has a large library of music and millions of users paying for it. With the API we can ask the user to authorize using their own spotify account. This way we have access to the user's information and playlists. 
+The full project board which includes the development process of this service can be found here: https://semseter3-ip-tomeykholt.atlassian.net/jira/software/projects/SEM3/boards/2. If you're working on this project, you will need to ask for an invite from me (https://github.com/StijnSchellekens) or https://github.com/TEykholt
 
 In order to get the authorization working, we need to verify the app with the spotify developer portal. The verified URL is 127.0.0.1:5000. Any other url will not support Spotify authorization and will therefore not work.
 
 # How to run the flask app
 This is mainly aimed towards windows users since python runs a little differently. In order to run the flask app you need to have something called a virtualenv. In this github the virtualenv has been provided and is called SpotifyEnv. In order to run the virtualenv, all you have to do is CD to the root file of this project and type "SpotifyEnv\Scripts\activate". This will activate the virtualenv and you will then be able to run the "python -m flask run" command.
+
+# Coding Conventions
+In this project we follow the standard coding conventions for Python (https://www.python.org/dev/peps/pep-0008) . We also use the standard Python coding conventions in regards to docstring which helps understanding methods easier without having to decipher the whole thing. 
+````
+def example(string: stringname) -> int
+"""This is an example description of a method.
+Args: 
+    string (stringname): description of string
+Returns:
+    Int: description of int returned"""
+````
+
+# Docker
+This project is also being pushed to Dockerhub, https://hub.docker.com/repository/docker/stijnschellekens/spotifylibrary. To pull the Docker project you need to first download Docker Desktop (Direct download: https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=header). To pull the docker image, open commandprompt and type: ``docker pull stijnschellekens/spotifylibrary``. To run the docker image, start Docker desktop, search for the image and run it. It will run on your localhost with post 5000.
 
 # Notes
 #### Development
@@ -44,14 +63,3 @@ Pull requests into the main branch will be tested so make sure you have created 
 The main branch has been locked to avoid accidentally breaking the application with a wrong push and also acts as a backup for if things somewhere else go wrong. It will always host the most up to date stable release.
 
 In order to update and push commits to the main branch, a pull requests has to be made. These will have to be reviewed within 24 hours
-
-# Coding Conventions
-In this project we follow the standard coding conventions for Python (https://www.python.org/dev/peps/pep-0008) . We also use the standard Python coding conventions in regards to docstring which helps understanding methods easier without having to decipher the whole thing. 
-````
-def example(string: stringname) -> int
-"""This is an example description of a method.
-Args: 
-    string (stringname): description of string
-Returns:
-    Int: description of int returned"""
-````
