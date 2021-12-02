@@ -1,4 +1,4 @@
-![minions](https://afamilycdn.com/thumb_w/600/2017/dm-min-bananaday-1500167484389-11-10-266-418-crop-1500168295674.gif)
+![minions](https://c.tenor.com/PFJV9ICiTTEAAAAC/minions-dance.gif)
 # Getting Started
 This is the repository for ipsemester3_music. If you are new here be sure to read this readme as it contains helpful information. If you have worked on this project before feel free to continue working on it. Any updates to the readme will be visible in the commit history. If you've worked on other projects within this organisation, you will only need to read the following parts:
 
