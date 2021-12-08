@@ -4,6 +4,8 @@ MAINTAINER Your Name "me"
 
 WORKDIR /python-docker
 
+ENV FLASK_APP main.py
+
 RUN python3 -v
 RUN python3 -m pip install flask
 RUN python3 -m pip install requests
