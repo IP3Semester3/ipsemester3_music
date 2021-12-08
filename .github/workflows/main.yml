@@ -4,8 +4,6 @@
 name: Python package
 
 on:
-  push:
-    branches: [ SEM3-25-development ]
   pull_request:
     branches: [ SEM3-25-stable ]
 
