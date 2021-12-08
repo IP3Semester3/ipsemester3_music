@@ -1,7 +1,7 @@
 name: Dockerization
 
 on:
-  pull_request:
+  push:
     branches: [ SEM3-25-stable ]
 
 jobs:
