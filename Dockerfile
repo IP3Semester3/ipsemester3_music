@@ -2,11 +2,11 @@ FROM ubuntu:20.04
 
 MAINTAINER Your Name "me"
 
-RUN apt-get update\
-    apt-get install software-properties-common\
-    add-apt-repository ppa:deadsnakes/ppa\
+RUN apt-get update && \
+    apt-get install software-properties-common && \
+    add-apt-repository ppa:deadsnakes/ppa && \
     # Install py39 from deadsnakes repository
-    apt-get install python3-9\
+    apt-get install python3-9 && \
     # Install pip from standard ubuntu packages
     apt-get install python3-pip
     
