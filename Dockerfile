@@ -2,7 +2,9 @@ FROM ubuntu:20.04
 
 MAINTAINER Your Name "me"
 
-RUN apt-get update -y && \
+RUN apt-get install python3
+    apt-get install python3-pip
+    apt-get update -y && \
     apt-get install -y python-pip python-dev
 WORKDIR /app
 
