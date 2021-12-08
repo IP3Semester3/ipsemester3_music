@@ -6,6 +6,7 @@ RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
 WORKDIR /app
 
+RUN python3 -v
 RUN python3 -m pip install flask
 RUN python3 -m pip install requests
 
