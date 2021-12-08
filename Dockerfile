@@ -9,7 +9,7 @@ RUN apt-get update -y
 
 WORKDIR /app
 
-RUN python -v
+RUN python3 -v
 RUN python3 -m pip install flask
 RUN python3 -m pip install requests
 
