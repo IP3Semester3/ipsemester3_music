@@ -2,6 +2,8 @@ FROM ubuntu:20.04
 
 MAINTAINER Your Name "me"
 
+RUN apt-get update -y
+
 WORKDIR /app
 
 RUN python -v
