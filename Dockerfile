@@ -16,6 +16,4 @@ RUN python3 -m pip install requests
 
 COPY . /app
 
-ENTRYPOINT [ "python3" ]
-
-CMD [ "main.py" ]
+CMD [ "python3", "-m", "flask", "run" ]
