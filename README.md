@@ -54,7 +54,7 @@ This service is part of a larger application using the MVC principle. Using the 
 ![c2](https://user-images.githubusercontent.com/73947701/143425039-e94d6091-06ed-437c-90ee-2083af29d6e1.png)
 
 #### Integration
-Due to the nature of this project, certain functionalities have to be tested using integration tests to avoid testing the spotify api itself while still assuring that the program is working as intented. A good example is [Issue #37](https://github.com/IP3Semester3/ipsemester3_music/issues/37). These tests are still part of the automated workflow so we can make sure everything is working as it should.
+Due to the nature of this project, certain functionalities have to be tested using integration tests to avoid testing the spotify api itself while still assuring that the program is working as intented. A good example is [Issue #37](https://github.com/IP3Semester3/ipsemester3_music/issues/37). These tests are still part of the automated workflow so we can make sure everything is working as it should according to the requirements from the stakeholders
 
 # Github setup
 ## Branches
