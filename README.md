@@ -53,6 +53,9 @@ There is a limit of 25 users that can authorize using this service and I have to
 This service is part of a larger application using the MVC principle. Using the data collected from the API in this service we can allow users to create lobbies for them to share their playlists with and host listening parties with their friends. The structure is as follows:
 ![c2](https://user-images.githubusercontent.com/73947701/143425039-e94d6091-06ed-437c-90ee-2083af29d6e1.png)
 
+#### Integration
+Due to the nature of this project, certain functionalities have to be tested using integration tests to avoid testing the spotify api itself while still assuring that the program is working as intented. A good example is [Issue #37](https://github.com/IP3Semester3/ipsemester3_music/issues/37). These tests are still part of the automated workflow so we can make sure everything is working as it should.
+
 # Github setup
 ## Branches
 In this github we work with different branches that correlate to the status of the project. Usually we use the Development branch during development and only push to the main branch after the code has been inspected and tested. 
